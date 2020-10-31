@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {box-sizing: border-box;
+	 font-family: "Roboto", sans-serif;
+}
+
+:root {
+	--blue: #66CDAA;
+	--white: #F5FFFA;
+	--black: #2F4F4F;
+	--gray: #696969;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: var(--blue);
+	padding: 15px;
+	margin: 0;
+	height: 20rem;
+	position: relative;
+	color: var(--white);
+}
+
+header h1 {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 2.5rem;
+}
+
+header p {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1rem;
+}
+
+#nav-link {
+	width: 100%;
+	background-color: var(--black);
+	margin: 0;
+	padding: 0;
+	height: 3rem;
+	position: relative;
+}
+
+#nav-link a {
+	color: var(--white);
+	padding-right: 30px;
+	cursor: pointer;
+	float: left;
+	padding: 14.7px;
+}
+
+#first {
+	background-color: var(--gray);
+}
+
+#left {
+	position: absolute;
+	right: 0;
+}
+ 
+#nav-link a:hover {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+
+/* section middle */
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap:wrap;
+	-ms-flex-wrap: wrap;
+	width: 100%;
+}
+
+.side {
+    -ms-flex: 30%;
+	flex: 30%;
+    background-color: #F0F8FF;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%;
+	flex: 70%;
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #696969;
+    color: var(--white)
+}
+
+footer {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--gray);
+    position: relative;
+}
+
+footer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 700px){
+	.row {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.nav-link a {
+		float:none;
+		width: 100%;
+	}
+}
